@@ -3,40 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Akib's Portfolio</title>
+<title>Akib Islam | Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color:black; color:white; font-family:sans-serif;">
+<body>
 
-<header style="background-color:darkorchid; padding:20px; text-align:center;">
-    <h1 style="color:blue;">Akib Islam</h1>
-    <p>Fullstack Developer & Designer</p>
+<header class="header">
+    <nav class="nav">
+        <h1 class="logo">Akib Islam</h1>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h2>Hi, I'm Akib</h2>
+        <p>Fullstack Developer & Designer</p>
+    </div>
 </header>
 
-<section id="about" style="padding:20px;">
-    <h2 style="color:blue;">About Me</h2>
-    <p>Hi, I'm Akib, a passionate developer. Check my projects below!</p>
+<section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>I'm Akib, a passionate developer with experience in building web apps and creative portfolios. I love coding, learning, and making projects that help people.</p>
 </section>
 
-<section id="portfolio" style="padding:20px; background-color:darkorchid;">
-    <h2 style="color:blue;">My Projects</h2>
-    <div>
-        <div style="background-color:black; padding:10px; margin:10px;">
-            <h3 style="color:white;">Project 1</h3>
-            <a href="https://github.com/ak-ake" style="color:blue;">View Code</a>
+<section id="portfolio" class="section portfolio">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Sample description for your first project.</p>
+            <a href="https://github.com/ak-ake" target="_blank">View Code</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Sample description for your second project.</p>
+            <a href="https://github.com/ak-ake" target="_blank">View Code</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Sample description for your third project.</p>
+            <a href="https://github.com/ak-ake" target="_blank">View Code</a>
         </div>
     </div>
 </section>
 
-<section id="contact" style="padding:20px;">
-    <h2 style="color:blue;">Contact Me</h2>
+<section id="contact" class="section contact">
+    <h2>Contact Me</h2>
     <form id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" style="margin:5px;"><br>
-        <input type="email" name="email" placeholder="Your Email" style="margin:5px;"><br>
-        <textarea name="message" placeholder="Your Message" style="margin:5px;"></textarea><br>
-        <button type="submit" style="background-color:blue; color:black;">Send</button>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
     </form>
 </section>
+
+<footer class="footer">
+    <p>&copy; 2025 Akib Islam | <a href="https://github.com/ak-ake" target="_blank">GitHub</a></p>
+</footer>
 
 <script src="main.js"></script>
 </body>
